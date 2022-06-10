@@ -1,0 +1,2944 @@
+/usr/sbin/mysqld, Version: 8.0.29 (MySQL Community Server - GPL). started with:
+Tcp port: 3306  Unix socket: /var/lib/mysql/mysql.sock
+Time                 Id Command    Argument
+# Time: 2022-06-08T14:16:23.246163Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:     8
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697783;
+# administrator command: Ping;
+# Time: 2022-06-08T14:16:23.248184Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:     8
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697783;
+# administrator command: Quit;
+# Time: 2022-06-08T14:16:53.374961Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:     9
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697813;
+# administrator command: Ping;
+# Time: 2022-06-08T14:16:53.378966Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:     9
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697813;
+# administrator command: Quit;
+# Time: 2022-06-08T14:17:23.594885Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    10
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697843;
+# administrator command: Ping;
+# Time: 2022-06-08T14:17:23.596814Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    10
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697843;
+# administrator command: Quit;
+# Time: 2022-06-08T14:17:38.099759Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.082493  Lock_time: 0.000017 Rows_sent: 10001  Rows_examined: 20002
+use isuconp;
+SET timestamp=1654697858;
+SELECT `id`, `user_id`, `body`, `created_at`, `mime` FROM `posts` ORDER BY `created_at` DESC;
+# Time: 2022-06-08T14:17:38.198399Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.005090  Lock_time: 0.000016 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.292283Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.088316  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 10001;
+# Time: 2022-06-08T14:17:38.293755Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000381  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.360270Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.065528  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100003
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 10001 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.362451Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.001341  Lock_time: 0.000009 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.366751Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.001167  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 1001;
+# Time: 2022-06-08T14:17:38.368425Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000222  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.370159Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000296  Lock_time: 0.000005 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 1001;
+# Time: 2022-06-08T14:17:38.372506Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000249  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.400200Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020949  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 10000;
+# Time: 2022-06-08T14:17:38.402121Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000278  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.465345Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.062339  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 10000 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.467895Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000284  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.469275Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000341  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 41;
+# Time: 2022-06-08T14:17:38.470453Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000265  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.472590Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000717  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 296;
+# Time: 2022-06-08T14:17:38.473854Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000259  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.475432Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000423  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 804;
+# Time: 2022-06-08T14:17:38.476424Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000221  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.477518Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000327  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 112;
+# Time: 2022-06-08T14:17:38.478694Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000218  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.500888Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.021450  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9999;
+# Time: 2022-06-08T14:17:38.502168Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000249  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.562831Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.060038  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 9999 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.564975Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000240  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.566489Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000470  Lock_time: 0.000005 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 357;
+# Time: 2022-06-08T14:17:38.567703Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000185  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.568595Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000173  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 410;
+# Time: 2022-06-08T14:17:38.569517Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000166  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.570321Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000193  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 248;
+# Time: 2022-06-08T14:17:38.571224Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000243  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.572120Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000240  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 792;
+# Time: 2022-06-08T14:17:38.572884Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000154  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.593933Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020415  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9998;
+# Time: 2022-06-08T14:17:38.594901Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000226  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.661667Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.066015  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 9998 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.663270Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000213  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.664451Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000277  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 1001;
+# Time: 2022-06-08T14:17:38.665588Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000219  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.667342Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000322  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 648;
+# Time: 2022-06-08T14:17:38.670436Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000246  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.671914Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000238  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 273;
+# Time: 2022-06-08T14:17:38.673172Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000231  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.674396Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000368  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 149;
+# Time: 2022-06-08T14:17:38.675277Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000289  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.697116Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.021116  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9997;
+# Time: 2022-06-08T14:17:38.699093Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000377  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.760975Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.060114  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 9997 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.762314Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000187  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.763227Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000176  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 363;
+# Time: 2022-06-08T14:17:38.764161Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000246  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.765217Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000256  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 838;
+# Time: 2022-06-08T14:17:38.766296Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000172  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.767275Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000164  Lock_time: 0.000001 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 266;
+# Time: 2022-06-08T14:17:38.768146Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000180  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.768999Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000187  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 89;
+# Time: 2022-06-08T14:17:38.770475Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000157  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.791789Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020557  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9996;
+# Time: 2022-06-08T14:17:38.793082Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000269  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.864472Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.070462  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 9996 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.866067Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000240  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.867460Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000227  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 969;
+# Time: 2022-06-08T14:17:38.868982Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000421  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.870374Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000443  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 573;
+# Time: 2022-06-08T14:17:38.872178Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000573  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.873816Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000370  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 646;
+# Time: 2022-06-08T14:17:38.875333Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000245  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.876545Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000330  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 876;
+# Time: 2022-06-08T14:17:38.877727Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000370  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.900959Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.022294  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9995;
+# Time: 2022-06-08T14:17:38.902283Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000307  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.984011Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.080870  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697858;
+SELECT * FROM `comments` WHERE `post_id` = 9995 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:38.986126Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000219  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.989637Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000497  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 974;
+# Time: 2022-06-08T14:17:38.991722Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000208  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.992752Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000313  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 549;
+# Time: 2022-06-08T14:17:38.993756Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000234  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.994801Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000270  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 395;
+# Time: 2022-06-08T14:17:38.995609Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000222  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:38.996729Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000259  Lock_time: 0.000017 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697858;
+SELECT * FROM `users` WHERE `id` = 517;
+# Time: 2022-06-08T14:17:38.997684Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000235  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697858;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.019100Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020553  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697858;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9994;
+# Time: 2022-06-08T14:17:39.020910Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000321  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.085243Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.063046  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9994 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.088731Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.002218  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.089858Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000263  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 395;
+# Time: 2022-06-08T14:17:39.090941Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000249  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.092172Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000470  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 75;
+# Time: 2022-06-08T14:17:39.093868Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000344  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.094885Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000310  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 37;
+# Time: 2022-06-08T14:17:39.095900Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000288  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.097200Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000359  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 455;
+# Time: 2022-06-08T14:17:39.098424Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000448  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.118072Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.018734  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9993;
+# Time: 2022-06-08T14:17:39.119431Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000363  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.188962Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.068847  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9993 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.190376Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000284  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.194389Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000379  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 112;
+# Time: 2022-06-08T14:17:39.195496Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000185  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.196384Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000366  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 362;
+# Time: 2022-06-08T14:17:39.197674Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000249  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.198949Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000348  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 230;
+# Time: 2022-06-08T14:17:39.200238Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000331  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.201365Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000337  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 945;
+# Time: 2022-06-08T14:17:39.203483Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000268  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.224918Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020604  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9992;
+# Time: 2022-06-08T14:17:39.226230Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000324  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.289028Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.062069  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9992 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.290345Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000226  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.291343Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000352  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 561;
+# Time: 2022-06-08T14:17:39.292314Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000200  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.293500Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000367  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 697;
+# Time: 2022-06-08T14:17:39.294624Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000241  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.295738Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000242  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 409;
+# Time: 2022-06-08T14:17:39.296843Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000334  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.298172Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000372  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 550;
+# Time: 2022-06-08T14:17:39.299202Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000289  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.320622Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020677  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9991;
+# Time: 2022-06-08T14:17:39.322260Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000350  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.385710Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.062437  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9991 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.387880Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000239  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.389337Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000510  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 896;
+# Time: 2022-06-08T14:17:39.390410Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000257  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.391585Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000347  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 598;
+# Time: 2022-06-08T14:17:39.393057Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000340  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.394716Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000452  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 487;
+# Time: 2022-06-08T14:17:39.396160Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000333  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.397355Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000363  Lock_time: 0.000010 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 618;
+# Time: 2022-06-08T14:17:39.398733Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000350  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.419407Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.019566  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9990;
+# Time: 2022-06-08T14:17:39.420624Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000212  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.482775Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.061397  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9990 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.484242Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000281  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.485368Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000255  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 442;
+# Time: 2022-06-08T14:17:39.486502Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000235  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.488465Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000302  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 342;
+# Time: 2022-06-08T14:17:39.489596Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000248  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.490725Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000297  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 117;
+# Time: 2022-06-08T14:17:39.491916Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000303  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.493472Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000452  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 304;
+# Time: 2022-06-08T14:17:39.494842Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000307  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.515729Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.019927  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9989;
+# Time: 2022-06-08T14:17:39.517174Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000297  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.578803Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.061028  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9989 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.580307Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000347  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.581391Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000273  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 979;
+# Time: 2022-06-08T14:17:39.582394Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000233  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.583992Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000730  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 82;
+# Time: 2022-06-08T14:17:39.585993Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000318  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.587437Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000287  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 471;
+# Time: 2022-06-08T14:17:39.590394Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000282  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.592431Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000257  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 775;
+# Time: 2022-06-08T14:17:39.593387Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000203  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.614557Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020487  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9988;
+# Time: 2022-06-08T14:17:39.616351Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000270  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.682570Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.065474  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9988 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.684289Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000307  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.686701Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000354  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 961;
+# Time: 2022-06-08T14:17:39.687750Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000224  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.688677Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000272  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 701;
+# Time: 2022-06-08T14:17:39.689725Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000285  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.690687Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000288  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 652;
+# Time: 2022-06-08T14:17:39.691628Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000194  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.692625Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000285  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 878;
+# Time: 2022-06-08T14:17:39.693600Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000312  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.715344Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.021070  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9987;
+# Time: 2022-06-08T14:17:39.716796Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000328  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.778643Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.060059  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9987 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.780208Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000350  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.781332Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000322  Lock_time: 0.000001 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 8;
+# Time: 2022-06-08T14:17:39.782362Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000377  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.783758Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000360  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 714;
+# Time: 2022-06-08T14:17:39.785214Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000285  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.786095Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000259  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 409;
+# Time: 2022-06-08T14:17:39.787310Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000230  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.788410Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000259  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 161;
+# Time: 2022-06-08T14:17:39.789348Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000227  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.810756Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.020521  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9986;
+# Time: 2022-06-08T14:17:39.812254Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000385  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.874987Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.061754  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9986 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.876897Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000312  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.878069Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000294  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 386;
+# Time: 2022-06-08T14:17:39.879298Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000304  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.880955Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000246  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 86;
+# Time: 2022-06-08T14:17:39.882154Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000268  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.883190Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000330  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 575;
+# Time: 2022-06-08T14:17:39.884307Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000219  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.885397Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000335  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 963;
+# Time: 2022-06-08T14:17:39.886602Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000263  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.908717Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.021304  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9985;
+# Time: 2022-06-08T14:17:39.912271Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000341  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.975874Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.062701  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697859;
+SELECT * FROM `comments` WHERE `post_id` = 9985 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:39.977324Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000327  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.978494Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000406  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 750;
+# Time: 2022-06-08T14:17:39.980035Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000264  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.981870Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000346  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 631;
+# Time: 2022-06-08T14:17:39.983775Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000498  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.985995Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000410  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 727;
+# Time: 2022-06-08T14:17:39.987722Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000329  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:39.991464Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000437  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697859;
+SELECT * FROM `users` WHERE `id` = 649;
+# Time: 2022-06-08T14:17:39.992733Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000235  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697859;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.015532Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.022008  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697859;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9984;
+# Time: 2022-06-08T14:17:40.017151Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000343  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.081531Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.063513  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697860;
+SELECT * FROM `comments` WHERE `post_id` = 9984 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:40.083357Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000363  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.085001Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000409  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 340;
+# Time: 2022-06-08T14:17:40.085969Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000267  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.087175Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000288  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 548;
+# Time: 2022-06-08T14:17:40.088376Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000202  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.089455Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000300  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 389;
+# Time: 2022-06-08T14:17:40.090731Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000366  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.091799Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000233  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 700;
+# Time: 2022-06-08T14:17:40.092726Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000251  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.114753Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.021096  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697860;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9983;
+# Time: 2022-06-08T14:17:40.116225Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000391  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.189741Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.071120  Lock_time: 0.000002 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697860;
+SELECT * FROM `comments` WHERE `post_id` = 9983 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:40.191277Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000321  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.192382Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000253  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 697;
+# Time: 2022-06-08T14:17:40.193723Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000238  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.194839Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000274  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 362;
+# Time: 2022-06-08T14:17:40.195802Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000291  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.196848Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000250  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 859;
+# Time: 2022-06-08T14:17:40.198569Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000400  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.200448Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000561  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 92;
+# Time: 2022-06-08T14:17:40.201509Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000272  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.221742Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.019455  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697860;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9982;
+# Time: 2022-06-08T14:17:40.223183Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000253  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.287751Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.063441  Lock_time: 0.000004 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697860;
+SELECT * FROM `comments` WHERE `post_id` = 9982 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:40.289258Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000340  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.291601Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000520  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 311;
+# Time: 2022-06-08T14:17:40.295300Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000344  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.296223Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000296  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 355;
+# Time: 2022-06-08T14:17:40.297192Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000226  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.298192Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000278  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 736;
+# Time: 2022-06-08T14:17:40.299409Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000387  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.300643Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000311  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 544;
+# Time: 2022-06-08T14:17:40.302309Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000400  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.321995Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.019009  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697860;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9981;
+# Time: 2022-06-08T14:17:40.323254Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000315  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.386907Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.062689  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697860;
+SELECT * FROM `comments` WHERE `post_id` = 9981 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:40.389969Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000174  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.391267Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000345  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 314;
+# Time: 2022-06-08T14:17:40.393099Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000207  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.394273Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000177  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 14;
+# Time: 2022-06-08T14:17:40.395450Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000140  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.396238Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000242  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 922;
+# Time: 2022-06-08T14:17:40.397604Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000177  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.398406Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000203  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 740;
+# Time: 2022-06-08T14:17:40.399790Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000219  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.420033Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.019550  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 100002
+SET timestamp=1654697860;
+SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = 9980;
+# Time: 2022-06-08T14:17:40.421214Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000294  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.483291Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.061301  Lock_time: 0.000003 Rows_sent: 3  Rows_examined: 100005
+SET timestamp=1654697860;
+SELECT * FROM `comments` WHERE `post_id` = 9980 ORDER BY `created_at` DESC LIMIT 3;
+# Time: 2022-06-08T14:17:40.484949Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000261  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.485898Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000199  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 672;
+# Time: 2022-06-08T14:17:40.486769Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000142  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.487772Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000163  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 722;
+# Time: 2022-06-08T14:17:40.488629Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000170  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.489470Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000189  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 276;
+# Time: 2022-06-08T14:17:40.490473Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000203  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.491442Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000218  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `users` WHERE `id` = 37;
+# Time: 2022-06-08T14:17:40.799690Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000722  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.806680Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000995  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `posts` WHERE `id` = 10001;
+# Time: 2022-06-08T14:17:40.839762Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000398  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.842882Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.001246  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `posts` WHERE `id` = 9999;
+# Time: 2022-06-08T14:17:40.892771Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000331  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697860;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:40.910992Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.009870  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697860;
+SELECT * FROM `posts` WHERE `id` = 10000;
+# Time: 2022-06-08T14:17:41.108274Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000233  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.111988Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000553  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9998;
+# Time: 2022-06-08T14:17:41.131623Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000205  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.138933Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000957  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9997;
+# Time: 2022-06-08T14:17:41.185299Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000710  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.189788Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.003411  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9996;
+# Time: 2022-06-08T14:17:41.382394Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000435  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.388028Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000655  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9995;
+# Time: 2022-06-08T14:17:41.421310Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000249  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.422953Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000806  Lock_time: 0.000005 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9994;
+# Time: 2022-06-08T14:17:41.469995Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000462  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.473050Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.001468  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9993;
+# Time: 2022-06-08T14:17:41.515180Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000354  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.516945Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000781  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9991;
+# Time: 2022-06-08T14:17:41.553850Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000274  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.556763Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000877  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9990;
+# Time: 2022-06-08T14:17:41.593947Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000483  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.596104Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000959  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9989;
+# Time: 2022-06-08T14:17:41.624685Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000238  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.629882Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000938  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9988;
+# Time: 2022-06-08T14:17:41.663169Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000216  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.674233Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.001635  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9987;
+# Time: 2022-06-08T14:17:41.735751Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000428  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.738654Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000508  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9986;
+# Time: 2022-06-08T14:17:41.769308Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000315  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.771049Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000623  Lock_time: 0.000004 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9985;
+# Time: 2022-06-08T14:17:41.797007Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000286  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.798696Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000542  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9983;
+# Time: 2022-06-08T14:17:41.814390Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000303  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697861;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:41.831036Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000593  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+SELECT * FROM `posts` WHERE `id` = 9982;
+# Time: 2022-06-08T14:17:41.839294Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000021  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.844202Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000016  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.857810Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000022  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.863390Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000108  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.869304Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000016  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.874380Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000018  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.878028Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000017  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.882935Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000017  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.886810Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000017  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.889299Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000017  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.889937Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.890674Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.891612Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000037  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.892347Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.893008Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.895429Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000019  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.896500Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.897419Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.898302Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.899294Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.900180Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000020  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.901472Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000075  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.902509Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.903332Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.904126Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.905071Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000077  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.905985Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000054  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.906819Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.908307Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.909286Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.910012Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000035  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.912056Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.912636Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.913211Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.913903Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.914780Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.915556Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000029  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.916656Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000029  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.917689Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.918482Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.919290Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.919971Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.920850Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000028  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.921628Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.922316Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.923191Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.924074Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.927404Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000015  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.928460Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.929279Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.930498Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000027  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.932311Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000035  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.934256Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.935437Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.936441Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.937173Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.937949Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.938621Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.939566Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.940216Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.940917Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.941778Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.942463Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.943483Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.945591Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.946485Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.947516Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.948307Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.949248Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.950221Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000016  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.950943Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.951684Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.952535Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.953551Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.954156Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.954989Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.956176Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000027  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.957147Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.957903Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.958531Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.960207Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000029  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.961292Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000018  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.962232Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000043  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.963159Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.964305Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.965001Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.965810Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.966585Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.967345Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.968286Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.969238Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.969931Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000024  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.970732Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.971387Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.972240Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.973136Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.974833Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.975417Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.976166Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.976816Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.977766Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000080  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.978559Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.979489Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.980313Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.980974Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.981540Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.982424Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.983400Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.984224Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.985262Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.986462Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000059  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.987561Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.989228Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.989850Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.990486Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.991305Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.991931Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.992578Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000086  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.993622Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000072  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.994334Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.995140Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.995911Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.996760Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.997493Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.998242Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.998872Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000023  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:41.999776Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697861;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.000537Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.001607Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000014  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.003114Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.003837Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.004456Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.005299Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+# administrator command: Close stmt;
+# Time: 2022-06-08T14:17:42.006453Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000218  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697862;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:42.007586Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000411  Lock_time: 0.000003 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+SELECT * FROM `posts` WHERE `id` = 9981;
+# Time: 2022-06-08T14:17:42.027556Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000691  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697862;
+# administrator command: Prepare;
+# Time: 2022-06-08T14:17:42.029670Z
+# User@Host: root[root] @ webapp_app_1.webapp_default [172.27.0.3]  Id:    11
+# Query_time: 0.000980  Lock_time: 0.000002 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1654697862;
+SELECT * FROM `posts` WHERE `id` = 9980;
+# Time: 2022-06-08T14:17:53.701391Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    12
+# Query_time: 0.000120  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697873;
+# administrator command: Ping;
+# Time: 2022-06-08T14:17:53.702827Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    12
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697873;
+# administrator command: Quit;
+# Time: 2022-06-08T14:18:23.803534Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    13
+# Query_time: 0.000040  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697903;
+# administrator command: Ping;
+# Time: 2022-06-08T14:18:23.804799Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    13
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697903;
+# administrator command: Quit;
+# Time: 2022-06-08T14:18:53.906807Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    14
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697933;
+# administrator command: Ping;
+# Time: 2022-06-08T14:18:53.907780Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    14
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697933;
+# administrator command: Quit;
+# Time: 2022-06-08T14:19:23.987392Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    15
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697963;
+# administrator command: Ping;
+# Time: 2022-06-08T14:19:23.988536Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    15
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697963;
+# administrator command: Quit;
+# Time: 2022-06-08T14:19:54.089092Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    16
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697994;
+# administrator command: Ping;
+# Time: 2022-06-08T14:19:54.090376Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    16
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654697994;
+# administrator command: Quit;
+# Time: 2022-06-08T14:20:24.176989Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    17
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698024;
+# administrator command: Ping;
+# Time: 2022-06-08T14:20:24.177949Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    17
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698024;
+# administrator command: Quit;
+# Time: 2022-06-08T14:20:54.268551Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    18
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698054;
+# administrator command: Ping;
+# Time: 2022-06-08T14:20:54.269736Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    18
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698054;
+# administrator command: Quit;
+# Time: 2022-06-08T14:21:24.361902Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    19
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698084;
+# administrator command: Ping;
+# Time: 2022-06-08T14:21:24.362891Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    19
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698084;
+# administrator command: Quit;
+# Time: 2022-06-08T14:21:54.455121Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    20
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698114;
+# administrator command: Ping;
+# Time: 2022-06-08T14:21:54.456346Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    20
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698114;
+# administrator command: Quit;
+# Time: 2022-06-08T14:22:24.626808Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    21
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698144;
+# administrator command: Ping;
+# Time: 2022-06-08T14:22:24.630007Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    21
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698144;
+# administrator command: Quit;
+# Time: 2022-06-08T14:22:54.830484Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    22
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698174;
+# administrator command: Ping;
+# Time: 2022-06-08T14:22:54.834588Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    22
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698174;
+# administrator command: Quit;
+# Time: 2022-06-08T14:23:24.951617Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    23
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698204;
+# administrator command: Ping;
+# Time: 2022-06-08T14:23:24.952411Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    23
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698204;
+# administrator command: Quit;
+# Time: 2022-06-08T14:23:55.087016Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    24
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698235;
+# administrator command: Ping;
+# Time: 2022-06-08T14:23:55.089218Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    24
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698235;
+# administrator command: Quit;
+# Time: 2022-06-08T14:24:25.224434Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    25
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698265;
+# administrator command: Ping;
+# Time: 2022-06-08T14:24:25.226318Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    25
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698265;
+# administrator command: Quit;
+# Time: 2022-06-08T14:24:55.338828Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    26
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698295;
+# administrator command: Ping;
+# Time: 2022-06-08T14:24:55.339912Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    26
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698295;
+# administrator command: Quit;
+# Time: 2022-06-08T14:25:25.631784Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    27
+# Query_time: 0.000019  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698325;
+# administrator command: Ping;
+# Time: 2022-06-08T14:25:25.661577Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    27
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698325;
+# administrator command: Quit;
+# Time: 2022-06-08T14:25:55.775723Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    28
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698355;
+# administrator command: Ping;
+# Time: 2022-06-08T14:25:55.776626Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    28
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698355;
+# administrator command: Quit;
+# Time: 2022-06-08T14:26:25.880187Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    29
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698385;
+# administrator command: Ping;
+# Time: 2022-06-08T14:26:25.881492Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    29
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698385;
+# administrator command: Quit;
+# Time: 2022-06-08T14:26:56.016176Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    30
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698416;
+# administrator command: Ping;
+# Time: 2022-06-08T14:26:56.018216Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    30
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698416;
+# administrator command: Quit;
+# Time: 2022-06-08T14:27:26.145095Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    31
+# Query_time: 0.000032  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698446;
+# administrator command: Ping;
+# Time: 2022-06-08T14:27:26.150181Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    31
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698446;
+# administrator command: Quit;
+# Time: 2022-06-08T14:27:56.240764Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    32
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698476;
+# administrator command: Ping;
+# Time: 2022-06-08T14:27:56.241701Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    32
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698476;
+# administrator command: Quit;
+# Time: 2022-06-08T14:28:26.399470Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    33
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698506;
+# administrator command: Ping;
+# Time: 2022-06-08T14:28:26.404042Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    33
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698506;
+# administrator command: Quit;
+# Time: 2022-06-08T14:28:56.495817Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    34
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698536;
+# administrator command: Ping;
+# Time: 2022-06-08T14:28:56.496980Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    34
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698536;
+# administrator command: Quit;
+# Time: 2022-06-08T14:29:26.574540Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    35
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698566;
+# administrator command: Ping;
+# Time: 2022-06-08T14:29:26.577188Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    35
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698566;
+# administrator command: Quit;
+# Time: 2022-06-08T14:29:56.669819Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    36
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698596;
+# administrator command: Ping;
+# Time: 2022-06-08T14:29:56.671105Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    36
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698596;
+# administrator command: Quit;
+# Time: 2022-06-08T14:30:26.835842Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    37
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698626;
+# administrator command: Ping;
+# Time: 2022-06-08T14:30:26.838662Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    37
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698626;
+# administrator command: Quit;
+# Time: 2022-06-08T14:30:56.996299Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    38
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698656;
+# administrator command: Ping;
+# Time: 2022-06-08T14:30:56.998743Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    38
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698656;
+# administrator command: Quit;
+# Time: 2022-06-08T14:31:27.134525Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    39
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698687;
+# administrator command: Ping;
+# Time: 2022-06-08T14:31:27.137491Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    39
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698687;
+# administrator command: Quit;
+# Time: 2022-06-08T14:31:57.227471Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    40
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698717;
+# administrator command: Ping;
+# Time: 2022-06-08T14:31:57.228603Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    40
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698717;
+# administrator command: Quit;
+# Time: 2022-06-08T14:32:27.336071Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    41
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698747;
+# administrator command: Ping;
+# Time: 2022-06-08T14:32:27.337669Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    41
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698747;
+# administrator command: Quit;
+# Time: 2022-06-08T14:32:57.422727Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    42
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698777;
+# administrator command: Ping;
+# Time: 2022-06-08T14:32:57.423669Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    42
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698777;
+# administrator command: Quit;
+# Time: 2022-06-08T14:33:27.507625Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    43
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698807;
+# administrator command: Ping;
+# Time: 2022-06-08T14:33:27.508536Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    43
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698807;
+# administrator command: Quit;
+# Time: 2022-06-08T14:33:57.596051Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    44
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698837;
+# administrator command: Ping;
+# Time: 2022-06-08T14:33:57.597146Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    44
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698837;
+# administrator command: Quit;
+# Time: 2022-06-08T14:34:27.689650Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    45
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698867;
+# administrator command: Ping;
+# Time: 2022-06-08T14:34:27.692006Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    45
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698867;
+# administrator command: Quit;
+# Time: 2022-06-08T14:34:57.774432Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    46
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698897;
+# administrator command: Ping;
+# Time: 2022-06-08T14:34:57.775503Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    46
+# Query_time: 0.000033  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698897;
+# administrator command: Quit;
+# Time: 2022-06-08T14:35:27.865931Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    47
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698927;
+# administrator command: Ping;
+# Time: 2022-06-08T14:35:27.867033Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    47
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698927;
+# administrator command: Quit;
+# Time: 2022-06-08T14:35:57.954053Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    48
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698957;
+# administrator command: Ping;
+# Time: 2022-06-08T14:35:57.954666Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    48
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698957;
+# administrator command: Quit;
+# Time: 2022-06-08T14:36:28.040216Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    49
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698988;
+# administrator command: Ping;
+# Time: 2022-06-08T14:36:28.041278Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    49
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654698988;
+# administrator command: Quit;
+# Time: 2022-06-08T14:36:58.113427Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    50
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699018;
+# administrator command: Ping;
+# Time: 2022-06-08T14:36:58.114524Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    50
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699018;
+# administrator command: Quit;
+# Time: 2022-06-08T14:37:28.195726Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    51
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699048;
+# administrator command: Ping;
+# Time: 2022-06-08T14:37:28.196546Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    51
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699048;
+# administrator command: Quit;
+# Time: 2022-06-08T14:37:58.279562Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    52
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699078;
+# administrator command: Ping;
+# Time: 2022-06-08T14:37:58.280728Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    52
+# Query_time: 0.000032  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699078;
+# administrator command: Quit;
+# Time: 2022-06-08T14:38:28.368190Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    53
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699108;
+# administrator command: Ping;
+# Time: 2022-06-08T14:38:28.368966Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    53
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699108;
+# administrator command: Quit;
+# Time: 2022-06-08T14:38:58.458775Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    54
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699138;
+# administrator command: Ping;
+# Time: 2022-06-08T14:38:58.459981Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    54
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699138;
+# administrator command: Quit;
+# Time: 2022-06-08T14:39:28.571012Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    55
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699168;
+# administrator command: Ping;
+# Time: 2022-06-08T14:39:28.573064Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    55
+# Query_time: 0.000057  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699168;
+# administrator command: Quit;
+# Time: 2022-06-08T14:39:58.659963Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    56
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699198;
+# administrator command: Ping;
+# Time: 2022-06-08T14:39:58.660966Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    56
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699198;
+# administrator command: Quit;
+# Time: 2022-06-08T14:40:28.746147Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    57
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699228;
+# administrator command: Ping;
+# Time: 2022-06-08T14:40:28.750168Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    57
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699228;
+# administrator command: Quit;
+# Time: 2022-06-08T14:40:58.833562Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    58
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699258;
+# administrator command: Ping;
+# Time: 2022-06-08T14:40:58.834671Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    58
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699258;
+# administrator command: Quit;
+# Time: 2022-06-08T14:41:28.995358Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    59
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699288;
+# administrator command: Ping;
+# Time: 2022-06-08T14:41:29.002714Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    59
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699289;
+# administrator command: Quit;
+# Time: 2022-06-08T14:41:59.162677Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    60
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699319;
+# administrator command: Ping;
+# Time: 2022-06-08T14:41:59.164257Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    60
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699319;
+# administrator command: Quit;
+# Time: 2022-06-08T14:42:29.493833Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    61
+# Query_time: 0.000016  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699349;
+# administrator command: Ping;
+# Time: 2022-06-08T14:42:29.507281Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    61
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699349;
+# administrator command: Quit;
+# Time: 2022-06-08T14:42:59.621342Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    62
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699379;
+# administrator command: Ping;
+# Time: 2022-06-08T14:42:59.622779Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    62
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699379;
+# administrator command: Quit;
+# Time: 2022-06-08T14:43:29.725598Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    63
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699409;
+# administrator command: Ping;
+# Time: 2022-06-08T14:43:29.727416Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    63
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699409;
+# administrator command: Quit;
+# Time: 2022-06-08T14:43:59.917229Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    64
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699439;
+# administrator command: Ping;
+# Time: 2022-06-08T14:43:59.918799Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    64
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699439;
+# administrator command: Quit;
+# Time: 2022-06-08T14:44:30.121516Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    65
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699470;
+# administrator command: Ping;
+# Time: 2022-06-08T14:44:30.127331Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    65
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699470;
+# administrator command: Quit;
+# Time: 2022-06-08T14:45:00.233970Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    66
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699500;
+# administrator command: Ping;
+# Time: 2022-06-08T14:45:00.235218Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    66
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699500;
+# administrator command: Quit;
+# Time: 2022-06-08T14:45:30.352180Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    67
+# Query_time: 0.000013  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699530;
+# administrator command: Ping;
+# Time: 2022-06-08T14:45:30.353178Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    67
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699530;
+# administrator command: Quit;
+# Time: 2022-06-08T14:46:00.451522Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    68
+# Query_time: 0.000037  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699560;
+# administrator command: Ping;
+# Time: 2022-06-08T14:46:00.452499Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    68
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699560;
+# administrator command: Quit;
+# Time: 2022-06-08T14:46:30.567454Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    69
+# Query_time: 0.000156  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699590;
+# administrator command: Ping;
+# Time: 2022-06-08T14:46:30.568699Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    69
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699590;
+# administrator command: Quit;
+# Time: 2022-06-08T14:47:00.740724Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    70
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699620;
+# administrator command: Ping;
+# Time: 2022-06-08T14:47:00.742043Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    70
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699620;
+# administrator command: Quit;
+# Time: 2022-06-08T14:47:30.834541Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    71
+# Query_time: 0.000008  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699650;
+# administrator command: Ping;
+# Time: 2022-06-08T14:47:30.835609Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    71
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699650;
+# administrator command: Quit;
+# Time: 2022-06-08T14:48:00.924242Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    72
+# Query_time: 0.000010  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699680;
+# administrator command: Ping;
+# Time: 2022-06-08T14:48:00.925364Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    72
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699680;
+# administrator command: Quit;
+# Time: 2022-06-08T14:48:31.016840Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    73
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699711;
+# administrator command: Ping;
+# Time: 2022-06-08T14:48:31.017902Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    73
+# Query_time: 0.000003  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699711;
+# administrator command: Quit;
+# Time: 2022-06-08T14:49:01.107045Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    74
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699741;
+# administrator command: Ping;
+# Time: 2022-06-08T14:49:01.108463Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    74
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699741;
+# administrator command: Quit;
+# Time: 2022-06-08T14:49:31.208490Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    75
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699771;
+# administrator command: Ping;
+# Time: 2022-06-08T14:49:31.209623Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    75
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699771;
+# administrator command: Quit;
+# Time: 2022-06-08T14:50:01.299465Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    76
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699801;
+# administrator command: Ping;
+# Time: 2022-06-08T14:50:01.300574Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    76
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699801;
+# administrator command: Quit;
+# Time: 2022-06-08T14:50:31.398572Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    77
+# Query_time: 0.000012  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699831;
+# administrator command: Ping;
+# Time: 2022-06-08T14:50:31.399637Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    77
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699831;
+# administrator command: Quit;
+# Time: 2022-06-08T14:51:01.499218Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    78
+# Query_time: 0.000059  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699861;
+# administrator command: Ping;
+# Time: 2022-06-08T14:51:01.500523Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    78
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699861;
+# administrator command: Quit;
+# Time: 2022-06-08T14:51:31.956874Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    79
+# Query_time: 0.000011  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699891;
+# administrator command: Ping;
+# Time: 2022-06-08T14:51:31.959906Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    79
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699891;
+# administrator command: Quit;
+# Time: 2022-06-08T14:52:02.060403Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    80
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699922;
+# administrator command: Ping;
+# Time: 2022-06-08T14:52:02.061183Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    80
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699922;
+# administrator command: Quit;
+# Time: 2022-06-08T14:52:32.149823Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    81
+# Query_time: 0.000009  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699952;
+# administrator command: Ping;
+# Time: 2022-06-08T14:52:32.154980Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    81
+# Query_time: 0.000006  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699952;
+# administrator command: Quit;
+# Time: 2022-06-08T14:53:02.241421Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    82
+# Query_time: 0.000051  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699982;
+# administrator command: Ping;
+# Time: 2022-06-08T14:53:02.242483Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    82
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654699982;
+# administrator command: Quit;
+# Time: 2022-06-08T14:53:32.337199Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    83
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700012;
+# administrator command: Ping;
+# Time: 2022-06-08T14:53:32.338085Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    83
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700012;
+# administrator command: Quit;
+# Time: 2022-06-08T14:54:02.419722Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    84
+# Query_time: 0.000007  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700042;
+# administrator command: Ping;
+# Time: 2022-06-08T14:54:02.420568Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    84
+# Query_time: 0.000004  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700042;
+# administrator command: Quit;
+# Time: 2022-06-08T14:54:32.516647Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    85
+# Query_time: 0.000054  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700072;
+# administrator command: Ping;
+# Time: 2022-06-08T14:54:32.518269Z
+# User@Host: healthchecker[healthchecker] @ localhost []  Id:    85
+# Query_time: 0.000005  Lock_time: 0.000000 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1654700072;
+# administrator command: Quit;
