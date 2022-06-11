@@ -5,6 +5,7 @@ services:
     volumes:
       - ./etc/nginx/conf.d:/etc/nginx/conf.d
       - ./public:/public
+      - ./rotate.sh:/etc/nginx/rotate.sh
       - ./logs/nginx:/var/log/nginx
     ports:
       - "80:80"
