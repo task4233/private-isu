@@ -69,6 +69,8 @@ type Comment struct {
 	User      User
 }
 
+var mc *memcache.Client
+
 func init() {
 	memdAddr := os.Getenv("ISUCONP_MEMCACHED_ADDRESS")
 	if memdAddr == "" {
@@ -77,6 +79,7 @@ func init() {
 	memcacheClient := memcache.New(memdAddr)
 	store = gsm.NewMemcacheStore(memcacheClient, "iscogram_", []byte("sendagaya"))
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
+	mc = memcache.New(memdAddr)
 }
 
 func dbInitialize() {
@@ -181,6 +184,28 @@ func makePosts(results []Post, csrfToken string, allComments bool) ([]Post, erro
 		err := db.Get(&p.CommentCount, "SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = ?", p.ID)
 		if err != nil {
 			return nil, err
+		}
+
+		key := fmt.Sprintf("comments.%d.count", p.ID)
+		val, err := mc.Get(key)
+		if err != nil && err != memcache.ErrCacheMiss {
+			return nil, err
+		}
+		if err == memcache.ErrCacheMiss {
+			// キャッシュが存在しない場合はMySQLからコメント数を取得する
+			err = db.Get(&p.CommentCount, "SELECT COUNT(*) AS `count` FROM `comments` WHERE `post_id` = ?", p.ID)
+			if err != nil {
+				return nil, err
+			}
+		}
+
+		// 10秒でexpireするようにSetする
+		err = mc.Set(&memcache.Item{Key: key, Value: []byte(strconv.Itoa(p.CommentCount)), Expiration: 10})
+		if err != nil {
+			return nil, err
+		} else {
+			// キャッシュが存在していればキャッシュのデータを代入する
+			p.CommentCount, _ = strconv.Atoi(string(val.Value))
 		}
 
 		query := "SELECT * FROM `comments` WHERE `post_id` = ? ORDER BY `created_at` DESC"
